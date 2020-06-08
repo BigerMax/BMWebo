@@ -1,0 +1,6 @@
+framework module Pods_BMWebo {
+  umbrella header "Pods-BMWebo-umbrella.h"
+
+  export *
+  module * { export * }
+}

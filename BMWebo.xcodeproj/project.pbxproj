@@ -1,0 +1,824 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CF4C4775DE0BF5469A4B7C4 /* Pods_BMWebo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67719FF408CBD50205C498CF /* Pods_BMWebo.framework */; };
+		39007DCC2479649500E1C9DC /* BMStatusPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39007DCB2479649500E1C9DC /* BMStatusPicture.swift */; };
+		39007DCE247966E400E1C9DC /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39007DCD247966E400E1C9DC /* Date+Extension.swift */; };
+		39281CFF247AB4D900604471 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39281CFE247AB4D900604471 /* String+Extension.swift */; };
+		39281D01247AC8D700604471 /* BMStatusListDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39281D00247AC8D700604471 /* BMStatusListDAL.swift */; };
+		39281D04247C057600604471 /* BMSQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39281D03247C057600604471 /* BMSQLiteManager.swift */; };
+		3950F292246AAAFE00F9B2E1 /* BMVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950F291246AAAFE00F9B2E1 /* BMVisitorView.swift */; };
+		3950F294246AAD5C00F9B2E1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950F293246AAD5C00F9B2E1 /* UIColor+Extension.swift */; };
+		3950F296246CE10500F9B2E1 /* BMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950F295246CE10500F9B2E1 /* BMNavigationController.swift */; };
+		3950F298246CF06700F9B2E1 /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 3950F297246CF06700F9B2E1 /* main.json */; };
+		3950F29B246CF14800F9B2E1 /* BMHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950F29A246CF14800F9B2E1 /* BMHomeViewController.swift */; };
+		3950F29E246CF1C100F9B2E1 /* BMStatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950F29D246CF1C100F9B2E1 /* BMStatusListViewModel.swift */; };
+		3950F2A0246CF20400F9B2E1 /* BMStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950F29F246CF20400F9B2E1 /* BMStatusViewModel.swift */; };
+		3950F2A2246CF2C000F9B2E1 /* BMStatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950F2A1246CF2BF00F9B2E1 /* BMStatusModel.swift */; };
+		3950F2A4246CF31D00F9B2E1 /* BMUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950F2A3246CF31D00F9B2E1 /* BMUserModel.swift */; };
+		3950F2A7246CF64500F9B2E1 /* BMEmojiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950F2A6246CF64500F9B2E1 /* BMEmojiManager.swift */; };
+		3950F2AB246CF6E700F9B2E1 /* BMEmojiPackageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950F2AA246CF6E700F9B2E1 /* BMEmojiPackageModel.swift */; };
+		3950F2AD246CF84B00F9B2E1 /* BMEmojiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950F2AC246CF84B00F9B2E1 /* BMEmojiModel.swift */; };
+		3950F2AF246CFE0C00F9B2E1 /* BMEmojiAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950F2AE246CFE0C00F9B2E1 /* BMEmojiAttachment.swift */; };
+		397D1C8F2463B0B70097779C /* BMRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397D1C8E2463B0B60097779C /* BMRefreshView.swift */; };
+		397D1C922463C5EF0097779C /* BMNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397D1C912463C5EF0097779C /* BMNetworkManager.swift */; };
+		397D1C952463C6B40097779C /* BMUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397D1C942463C6B40097779C /* BMUserAccount.swift */; };
+		397D1C97246406E30097779C /* String+BMPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397D1C96246406E30097779C /* String+BMPath.swift */; };
+		399C463E24893A9F00D7E065 /* UIImageView+BMWebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399C463D24893A9F00D7E065 /* UIImageView+BMWebImage.swift */; };
+		399C464024893BF700D7E065 /* UIImage+BMExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399C463F24893BF700D7E065 /* UIImage+BMExtension.swift */; };
+		399C46422489425100D7E065 /* UIButton+Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399C46412489425100D7E065 /* UIButton+Tool.swift */; };
+		39AA831E248D388600DA7CA8 /* BMHomeNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA831D248D388600DA7CA8 /* BMHomeNormalCell.swift */; };
+		39AA8320248D38FC00DA7CA8 /* BMHomeRepostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA831F248D38FC00DA7CA8 /* BMHomeRepostCell.swift */; };
+		39AA8322248DCC1800DA7CA8 /* BMWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA8321248DCC1800DA7CA8 /* BMWebViewController.swift */; };
+		39AA8324248DCE3700DA7CA8 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA8323248DCE3700DA7CA8 /* UIBarButtonItem+Extension.swift */; };
+		39AA8327248DD55F00DA7CA8 /* BMProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA8326248DD55F00DA7CA8 /* BMProfileViewController.swift */; };
+		39C7574C247EC20800E1C89E /* HMPhotoBrowserPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C75743247EC20800E1C89E /* HMPhotoBrowserPhotos.m */; };
+		39C7574D247EC20800E1C89E /* HMPhotoViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C75744247EC20800E1C89E /* HMPhotoViewerController.m */; };
+		39C7574E247EC20800E1C89E /* HMPhotoBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C75748247EC20800E1C89E /* HMPhotoBrowserController.m */; };
+		39C7574F247EC20800E1C89E /* HMPhotoBrowserAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C75749247EC20800E1C89E /* HMPhotoBrowserAnimator.m */; };
+		39C75750247EC20800E1C89E /* HMPhotoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C7574A247EC20800E1C89E /* HMPhotoProgressView.m */; };
+		39C75753247EC45E00E1C89E /* BMTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C75752247EC45E00E1C89E /* BMTitleButton.swift */; };
+		39C75756247FFA7400E1C89E /* BMHomeBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C75755247FFA7400E1C89E /* BMHomeBaseCell.swift */; };
+		39C75759247FFBD800E1C89E /* BMLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C75758247FFBD800E1C89E /* BMLabel.swift */; };
+		39C7575C247FFC2700E1C89E /* BMStatusToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C7575B247FFC2700E1C89E /* BMStatusToolView.swift */; };
+		39C7575F247FFC6E00E1C89E /* BMStatusPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C7575E247FFC6E00E1C89E /* BMStatusPictureView.swift */; };
+		D9A4316824595CC400C03479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A4316724595CC400C03479 /* AppDelegate.swift */; };
+		D9A4316A24595CC400C03479 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A4316924595CC400C03479 /* SceneDelegate.swift */; };
+		D9A4316C24595CC400C03479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A4316B24595CC400C03479 /* ViewController.swift */; };
+		D9A4316F24595CC400C03479 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A4316D24595CC400C03479 /* Main.storyboard */; };
+		D9A4317224595CC400C03479 /* BMWebo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9A4317024595CC400C03479 /* BMWebo.xcdatamodeld */; };
+		D9A4317424595CC800C03479 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9A4317324595CC800C03479 /* Assets.xcassets */; };
+		D9A4317724595CC800C03479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A4317524595CC800C03479 /* LaunchScreen.storyboard */; };
+		D9A4318224596AF500C03479 /* BMMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A4318124596AF500C03479 /* BMMainTabBarController.swift */; };
+		D9A431862459700000C03479 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A431852459700000C03479 /* Bundle+Extension.swift */; };
+		D9A43188245970EA00C03479 /* BMBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A43187245970EA00C03479 /* BMBaseViewController.swift */; };
+		D9A4318A2459712500C03479 /* BMNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A431892459712500C03479 /* BMNavigationBar.swift */; };
+		D9A4318C2459725E00C03479 /* BMWeboCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A4318B2459725E00C03479 /* BMWeboCommon.swift */; };
+		D9A4318F245972B200C03479 /* BMLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A4318E245972B200C03479 /* BMLayout.swift */; };
+		D9A43191245973C500C03479 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A43190245973C500C03479 /* UIScreen+Extension.swift */; };
+		D9A431942459775600C03479 /* BMRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A431932459775600C03479 /* BMRefreshControl.swift */; };
+		D9AF9E71246C2B3500CD2B96 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AF9E70246C2B3500CD2B96 /* UILabel+Extension.swift */; };
+		D9AF9E73246C2C5100CD2B96 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AF9E72246C2C5100CD2B96 /* UIButton+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17C48DF3D9D5EDE0D01B05E3 /* Pods-BMWebo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMWebo.debug.xcconfig"; path = "Target Support Files/Pods-BMWebo/Pods-BMWebo.debug.xcconfig"; sourceTree = "<group>"; };
+		39007DCB2479649500E1C9DC /* BMStatusPicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMStatusPicture.swift; sourceTree = "<group>"; };
+		39007DCD247966E400E1C9DC /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		39281CFE247AB4D900604471 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		39281D00247AC8D700604471 /* BMStatusListDAL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMStatusListDAL.swift; sourceTree = "<group>"; };
+		39281D03247C057600604471 /* BMSQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMSQLiteManager.swift; sourceTree = "<group>"; };
+		3950F291246AAAFE00F9B2E1 /* BMVisitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMVisitorView.swift; sourceTree = "<group>"; };
+		3950F293246AAD5C00F9B2E1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		3950F295246CE10500F9B2E1 /* BMNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMNavigationController.swift; sourceTree = "<group>"; };
+		3950F297246CF06700F9B2E1 /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
+		3950F29A246CF14800F9B2E1 /* BMHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMHomeViewController.swift; sourceTree = "<group>"; };
+		3950F29D246CF1C100F9B2E1 /* BMStatusListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMStatusListViewModel.swift; sourceTree = "<group>"; };
+		3950F29F246CF20400F9B2E1 /* BMStatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMStatusViewModel.swift; sourceTree = "<group>"; };
+		3950F2A1246CF2BF00F9B2E1 /* BMStatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMStatusModel.swift; sourceTree = "<group>"; };
+		3950F2A3246CF31D00F9B2E1 /* BMUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMUserModel.swift; sourceTree = "<group>"; };
+		3950F2A6246CF64500F9B2E1 /* BMEmojiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMEmojiManager.swift; sourceTree = "<group>"; };
+		3950F2AA246CF6E700F9B2E1 /* BMEmojiPackageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMEmojiPackageModel.swift; sourceTree = "<group>"; };
+		3950F2AC246CF84B00F9B2E1 /* BMEmojiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMEmojiModel.swift; sourceTree = "<group>"; };
+		3950F2AE246CFE0C00F9B2E1 /* BMEmojiAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMEmojiAttachment.swift; sourceTree = "<group>"; };
+		397D1C8E2463B0B60097779C /* BMRefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMRefreshView.swift; sourceTree = "<group>"; };
+		397D1C912463C5EF0097779C /* BMNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMNetworkManager.swift; sourceTree = "<group>"; };
+		397D1C942463C6B40097779C /* BMUserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMUserAccount.swift; sourceTree = "<group>"; };
+		397D1C96246406E30097779C /* String+BMPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+BMPath.swift"; sourceTree = "<group>"; };
+		399C463D24893A9F00D7E065 /* UIImageView+BMWebImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+BMWebImage.swift"; sourceTree = "<group>"; };
+		399C463F24893BF700D7E065 /* UIImage+BMExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+BMExtension.swift"; sourceTree = "<group>"; };
+		399C46412489425100D7E065 /* UIButton+Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Tool.swift"; sourceTree = "<group>"; };
+		39AA831D248D388600DA7CA8 /* BMHomeNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMHomeNormalCell.swift; sourceTree = "<group>"; };
+		39AA831F248D38FC00DA7CA8 /* BMHomeRepostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMHomeRepostCell.swift; sourceTree = "<group>"; };
+		39AA8321248DCC1800DA7CA8 /* BMWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMWebViewController.swift; sourceTree = "<group>"; };
+		39AA8323248DCE3700DA7CA8 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		39AA8326248DD55F00DA7CA8 /* BMProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMProfileViewController.swift; sourceTree = "<group>"; };
+		39C75741247EC20700E1C89E /* BMWebo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BMWebo-Bridging-Header.h"; sourceTree = "<group>"; };
+		39C75742247EC20800E1C89E /* HMPhotoBrowserAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPhotoBrowserAnimator.h; sourceTree = "<group>"; };
+		39C75743247EC20800E1C89E /* HMPhotoBrowserPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPhotoBrowserPhotos.m; sourceTree = "<group>"; };
+		39C75744247EC20800E1C89E /* HMPhotoViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPhotoViewerController.m; sourceTree = "<group>"; };
+		39C75745247EC20800E1C89E /* HMPhotoBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPhotoBrowserController.h; sourceTree = "<group>"; };
+		39C75746247EC20800E1C89E /* HMPhotoBrowserPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPhotoBrowserPhotos.h; sourceTree = "<group>"; };
+		39C75747247EC20800E1C89E /* HMPhotoViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPhotoViewerController.h; sourceTree = "<group>"; };
+		39C75748247EC20800E1C89E /* HMPhotoBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPhotoBrowserController.m; sourceTree = "<group>"; };
+		39C75749247EC20800E1C89E /* HMPhotoBrowserAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPhotoBrowserAnimator.m; sourceTree = "<group>"; };
+		39C7574A247EC20800E1C89E /* HMPhotoProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPhotoProgressView.m; sourceTree = "<group>"; };
+		39C7574B247EC20800E1C89E /* HMPhotoProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPhotoProgressView.h; sourceTree = "<group>"; };
+		39C75752247EC45E00E1C89E /* BMTitleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMTitleButton.swift; sourceTree = "<group>"; };
+		39C75755247FFA7400E1C89E /* BMHomeBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMHomeBaseCell.swift; sourceTree = "<group>"; };
+		39C75758247FFBD800E1C89E /* BMLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMLabel.swift; sourceTree = "<group>"; };
+		39C7575B247FFC2700E1C89E /* BMStatusToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMStatusToolView.swift; sourceTree = "<group>"; };
+		39C7575E247FFC6E00E1C89E /* BMStatusPictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMStatusPictureView.swift; sourceTree = "<group>"; };
+		67719FF408CBD50205C498CF /* Pods_BMWebo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BMWebo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C4EFA83F397CF02CDC41607 /* Pods-BMWebo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMWebo.release.xcconfig"; path = "Target Support Files/Pods-BMWebo/Pods-BMWebo.release.xcconfig"; sourceTree = "<group>"; };
+		D9A4316424595CC400C03479 /* BMWebo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMWebo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9A4316724595CC400C03479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D9A4316924595CC400C03479 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D9A4316B24595CC400C03479 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D9A4316E24595CC400C03479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9A4317124595CC400C03479 /* BMWebo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BMWebo.xcdatamodel; sourceTree = "<group>"; };
+		D9A4317324595CC800C03479 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9A4317624595CC800C03479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9A4317824595CC800C03479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9A4318124596AF500C03479 /* BMMainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMMainTabBarController.swift; sourceTree = "<group>"; };
+		D9A431852459700000C03479 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		D9A43187245970EA00C03479 /* BMBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMBaseViewController.swift; sourceTree = "<group>"; };
+		D9A431892459712500C03479 /* BMNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMNavigationBar.swift; sourceTree = "<group>"; };
+		D9A4318B2459725E00C03479 /* BMWeboCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMWeboCommon.swift; sourceTree = "<group>"; };
+		D9A4318E245972B200C03479 /* BMLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMLayout.swift; sourceTree = "<group>"; };
+		D9A43190245973C500C03479 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
+		D9A431932459775600C03479 /* BMRefreshControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMRefreshControl.swift; sourceTree = "<group>"; };
+		D9AF9E70246C2B3500CD2B96 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		D9AF9E72246C2C5100CD2B96 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9A4316124595CC400C03479 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF4C4775DE0BF5469A4B7C4 /* Pods_BMWebo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39281D02247C055800604471 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				39281D03247C057600604471 /* BMSQLiteManager.swift */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
+		3950F290246AAA6600F9B2E1 /* VisitorView */ = {
+			isa = PBXGroup;
+			children = (
+				3950F291246AAAFE00F9B2E1 /* BMVisitorView.swift */,
+			);
+			path = VisitorView;
+			sourceTree = "<group>";
+		};
+		3950F299246CF12B00F9B2E1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				39C7575D247FFC5B00E1C89E /* PictureView */,
+				39C7575A247FFC1000E1C89E /* ToolVIew */,
+				39C75754247FFA5C00E1C89E /* Cell */,
+				39C75751247EC44400E1C89E /* TitleButton */,
+				3950F29A246CF14800F9B2E1 /* BMHomeViewController.swift */,
+				39AA8321248DCC1800DA7CA8 /* BMWebViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3950F29C246CF1A700F9B2E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3950F29D246CF1C100F9B2E1 /* BMStatusListViewModel.swift */,
+				3950F29F246CF20400F9B2E1 /* BMStatusViewModel.swift */,
+				3950F2A3246CF31D00F9B2E1 /* BMUserModel.swift */,
+				3950F2A1246CF2BF00F9B2E1 /* BMStatusModel.swift */,
+				39007DCB2479649500E1C9DC /* BMStatusPicture.swift */,
+				39281D00247AC8D700604471 /* BMStatusListDAL.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3950F2A5246CF62300F9B2E1 /* Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				3950F2A9246CF68100F9B2E1 /* Model */,
+				3950F2A6246CF64500F9B2E1 /* BMEmojiManager.swift */,
+			);
+			path = Emoji;
+			sourceTree = "<group>";
+		};
+		3950F2A9246CF68100F9B2E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3950F2AA246CF6E700F9B2E1 /* BMEmojiPackageModel.swift */,
+				3950F2AE246CFE0C00F9B2E1 /* BMEmojiAttachment.swift */,
+				3950F2AC246CF84B00F9B2E1 /* BMEmojiModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		397D1C902463C5D30097779C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				397D1C932463C6990097779C /* Model */,
+				397D1C912463C5EF0097779C /* BMNetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		397D1C932463C6990097779C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				397D1C942463C6B40097779C /* BMUserAccount.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39AA8325248DD52C00DA7CA8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				39AA8326248DD55F00DA7CA8 /* BMProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		39C7573E247EC1A700E1C89E /* PhotoBrower */ = {
+			isa = PBXGroup;
+			children = (
+				39C75742247EC20800E1C89E /* HMPhotoBrowserAnimator.h */,
+				39C75749247EC20800E1C89E /* HMPhotoBrowserAnimator.m */,
+				39C75745247EC20800E1C89E /* HMPhotoBrowserController.h */,
+				39C75748247EC20800E1C89E /* HMPhotoBrowserController.m */,
+				39C75746247EC20800E1C89E /* HMPhotoBrowserPhotos.h */,
+				39C75743247EC20800E1C89E /* HMPhotoBrowserPhotos.m */,
+				39C7574B247EC20800E1C89E /* HMPhotoProgressView.h */,
+				39C7574A247EC20800E1C89E /* HMPhotoProgressView.m */,
+				39C75747247EC20800E1C89E /* HMPhotoViewerController.h */,
+				39C75744247EC20800E1C89E /* HMPhotoViewerController.m */,
+			);
+			path = PhotoBrower;
+			sourceTree = "<group>";
+		};
+		39C75751247EC44400E1C89E /* TitleButton */ = {
+			isa = PBXGroup;
+			children = (
+				39C75752247EC45E00E1C89E /* BMTitleButton.swift */,
+			);
+			path = TitleButton;
+			sourceTree = "<group>";
+		};
+		39C75754247FFA5C00E1C89E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				39C75755247FFA7400E1C89E /* BMHomeBaseCell.swift */,
+				39AA831D248D388600DA7CA8 /* BMHomeNormalCell.swift */,
+				39AA831F248D38FC00DA7CA8 /* BMHomeRepostCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		39C75757247FFBC200E1C89E /* BMLabel */ = {
+			isa = PBXGroup;
+			children = (
+				39C75758247FFBD800E1C89E /* BMLabel.swift */,
+			);
+			path = BMLabel;
+			sourceTree = "<group>";
+		};
+		39C7575A247FFC1000E1C89E /* ToolVIew */ = {
+			isa = PBXGroup;
+			children = (
+				39C7575B247FFC2700E1C89E /* BMStatusToolView.swift */,
+			);
+			path = ToolVIew;
+			sourceTree = "<group>";
+		};
+		39C7575D247FFC5B00E1C89E /* PictureView */ = {
+			isa = PBXGroup;
+			children = (
+				39C7575E247FFC6E00E1C89E /* BMStatusPictureView.swift */,
+			);
+			path = PictureView;
+			sourceTree = "<group>";
+		};
+		817EA66AC86A0802264627CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17C48DF3D9D5EDE0D01B05E3 /* Pods-BMWebo.debug.xcconfig */,
+				8C4EFA83F397CF02CDC41607 /* Pods-BMWebo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AAAA08FCBE8DA3908532AF48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67719FF408CBD50205C498CF /* Pods_BMWebo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9A4315B24595CC400C03479 = {
+			isa = PBXGroup;
+			children = (
+				D9A4316624595CC400C03479 /* BMWebo */,
+				D9A4316524595CC400C03479 /* Products */,
+				817EA66AC86A0802264627CC /* Pods */,
+				AAAA08FCBE8DA3908532AF48 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D9A4316524595CC400C03479 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9A4316424595CC400C03479 /* BMWebo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9A4316624595CC400C03479 /* BMWebo */ = {
+			isa = PBXGroup;
+			children = (
+				3950F29C246CF1A700F9B2E1 /* ViewModel */,
+				D9A4318324596FD000C03479 /* Tools */,
+				D9A4317E24596A9700C03479 /* Views */,
+				D9A4316724595CC400C03479 /* AppDelegate.swift */,
+				39C75741247EC20700E1C89E /* BMWebo-Bridging-Header.h */,
+				D9A4316924595CC400C03479 /* SceneDelegate.swift */,
+				D9A4316B24595CC400C03479 /* ViewController.swift */,
+				D9A4316D24595CC400C03479 /* Main.storyboard */,
+				D9A4317324595CC800C03479 /* Assets.xcassets */,
+				D9A4317524595CC800C03479 /* LaunchScreen.storyboard */,
+				D9A4317824595CC800C03479 /* Info.plist */,
+				D9A4317024595CC400C03479 /* BMWebo.xcdatamodeld */,
+				D9A4318B2459725E00C03479 /* BMWeboCommon.swift */,
+			);
+			path = BMWebo;
+			sourceTree = "<group>";
+		};
+		D9A4317E24596A9700C03479 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				39AA8325248DD52C00DA7CA8 /* Profile */,
+				3950F299246CF12B00F9B2E1 /* Home */,
+				D9A431922459770B00C03479 /* Plugs */,
+				D9A4317F24596AAA00C03479 /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D9A4317F24596AAA00C03479 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				39C75757247FFBC200E1C89E /* BMLabel */,
+				3950F297246CF06700F9B2E1 /* main.json */,
+				3950F290246AAA6600F9B2E1 /* VisitorView */,
+				D9A4318024596AD200C03479 /* MainController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D9A4318024596AD200C03479 /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				D9A4318124596AF500C03479 /* BMMainTabBarController.swift */,
+				D9A43187245970EA00C03479 /* BMBaseViewController.swift */,
+				D9A431892459712500C03479 /* BMNavigationBar.swift */,
+				3950F295246CE10500F9B2E1 /* BMNavigationController.swift */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
+		D9A4318324596FD000C03479 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				39C7573E247EC1A700E1C89E /* PhotoBrower */,
+				39281D02247C055800604471 /* SQLite */,
+				3950F2A5246CF62300F9B2E1 /* Emoji */,
+				397D1C902463C5D30097779C /* Network */,
+				D9A4318D245972A400C03479 /* Structs */,
+				D9A4318424596FD800C03479 /* Extensions */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		D9A4318424596FD800C03479 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D9A431852459700000C03479 /* Bundle+Extension.swift */,
+				D9A43190245973C500C03479 /* UIScreen+Extension.swift */,
+				397D1C96246406E30097779C /* String+BMPath.swift */,
+				3950F293246AAD5C00F9B2E1 /* UIColor+Extension.swift */,
+				D9AF9E70246C2B3500CD2B96 /* UILabel+Extension.swift */,
+				D9AF9E72246C2C5100CD2B96 /* UIButton+Extension.swift */,
+				39007DCD247966E400E1C9DC /* Date+Extension.swift */,
+				39281CFE247AB4D900604471 /* String+Extension.swift */,
+				399C463D24893A9F00D7E065 /* UIImageView+BMWebImage.swift */,
+				399C463F24893BF700D7E065 /* UIImage+BMExtension.swift */,
+				399C46412489425100D7E065 /* UIButton+Tool.swift */,
+				39AA8323248DCE3700DA7CA8 /* UIBarButtonItem+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D9A4318D245972A400C03479 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				D9A4318E245972B200C03479 /* BMLayout.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		D9A431922459770B00C03479 /* Plugs */ = {
+			isa = PBXGroup;
+			children = (
+				D9A431932459775600C03479 /* BMRefreshControl.swift */,
+				397D1C8E2463B0B60097779C /* BMRefreshView.swift */,
+			);
+			path = Plugs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9A4316324595CC400C03479 /* BMWebo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9A4317B24595CC800C03479 /* Build configuration list for PBXNativeTarget "BMWebo" */;
+			buildPhases = (
+				E05414B651DEF5D2B2BFCD52 /* [CP] Check Pods Manifest.lock */,
+				D9A4316024595CC400C03479 /* Sources */,
+				D9A4316124595CC400C03479 /* Frameworks */,
+				D9A4316224595CC400C03479 /* Resources */,
+				91D91E31F5A6E7C977D412AB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BMWebo;
+			productName = BMWebo;
+			productReference = D9A4316424595CC400C03479 /* BMWebo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9A4315C24595CC400C03479 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = BIGGERMAX;
+				TargetAttributes = {
+					D9A4316324595CC400C03479 = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1150;
+					};
+				};
+			};
+			buildConfigurationList = D9A4315F24595CC400C03479 /* Build configuration list for PBXProject "BMWebo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9A4315B24595CC400C03479;
+			productRefGroup = D9A4316524595CC400C03479 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9A4316324595CC400C03479 /* BMWebo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9A4316224595CC400C03479 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9A4317724595CC800C03479 /* LaunchScreen.storyboard in Resources */,
+				D9A4317424595CC800C03479 /* Assets.xcassets in Resources */,
+				3950F298246CF06700F9B2E1 /* main.json in Resources */,
+				D9A4316F24595CC400C03479 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91D91E31F5A6E7C977D412AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BMWebo/Pods-BMWebo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BMWebo/Pods-BMWebo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BMWebo/Pods-BMWebo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E05414B651DEF5D2B2BFCD52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BMWebo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9A4316024595CC400C03479 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				399C463E24893A9F00D7E065 /* UIImageView+BMWebImage.swift in Sources */,
+				39C75756247FFA7400E1C89E /* BMHomeBaseCell.swift in Sources */,
+				39281D04247C057600604471 /* BMSQLiteManager.swift in Sources */,
+				3950F29E246CF1C100F9B2E1 /* BMStatusListViewModel.swift in Sources */,
+				39281CFF247AB4D900604471 /* String+Extension.swift in Sources */,
+				3950F29B246CF14800F9B2E1 /* BMHomeViewController.swift in Sources */,
+				39AA8322248DCC1800DA7CA8 /* BMWebViewController.swift in Sources */,
+				39C7575C247FFC2700E1C89E /* BMStatusToolView.swift in Sources */,
+				3950F2A2246CF2C000F9B2E1 /* BMStatusModel.swift in Sources */,
+				3950F2A4246CF31D00F9B2E1 /* BMUserModel.swift in Sources */,
+				39C7574E247EC20800E1C89E /* HMPhotoBrowserController.m in Sources */,
+				3950F2AB246CF6E700F9B2E1 /* BMEmojiPackageModel.swift in Sources */,
+				39AA8327248DD55F00DA7CA8 /* BMProfileViewController.swift in Sources */,
+				39AA8324248DCE3700DA7CA8 /* UIBarButtonItem+Extension.swift in Sources */,
+				D9A4316C24595CC400C03479 /* ViewController.swift in Sources */,
+				39C75753247EC45E00E1C89E /* BMTitleButton.swift in Sources */,
+				3950F292246AAAFE00F9B2E1 /* BMVisitorView.swift in Sources */,
+				39C7574D247EC20800E1C89E /* HMPhotoViewerController.m in Sources */,
+				397D1C952463C6B40097779C /* BMUserAccount.swift in Sources */,
+				3950F294246AAD5C00F9B2E1 /* UIColor+Extension.swift in Sources */,
+				39C7574F247EC20800E1C89E /* HMPhotoBrowserAnimator.m in Sources */,
+				D9A431862459700000C03479 /* Bundle+Extension.swift in Sources */,
+				D9A4316824595CC400C03479 /* AppDelegate.swift in Sources */,
+				39AA831E248D388600DA7CA8 /* BMHomeNormalCell.swift in Sources */,
+				3950F2AD246CF84B00F9B2E1 /* BMEmojiModel.swift in Sources */,
+				D9A43191245973C500C03479 /* UIScreen+Extension.swift in Sources */,
+				399C464024893BF700D7E065 /* UIImage+BMExtension.swift in Sources */,
+				D9A431942459775600C03479 /* BMRefreshControl.swift in Sources */,
+				39C7575F247FFC6E00E1C89E /* BMStatusPictureView.swift in Sources */,
+				D9AF9E71246C2B3500CD2B96 /* UILabel+Extension.swift in Sources */,
+				D9A4318C2459725E00C03479 /* BMWeboCommon.swift in Sources */,
+				397D1C8F2463B0B70097779C /* BMRefreshView.swift in Sources */,
+				397D1C922463C5EF0097779C /* BMNetworkManager.swift in Sources */,
+				D9A4318F245972B200C03479 /* BMLayout.swift in Sources */,
+				D9AF9E73246C2C5100CD2B96 /* UIButton+Extension.swift in Sources */,
+				D9A4318224596AF500C03479 /* BMMainTabBarController.swift in Sources */,
+				39281D01247AC8D700604471 /* BMStatusListDAL.swift in Sources */,
+				399C46422489425100D7E065 /* UIButton+Tool.swift in Sources */,
+				39007DCE247966E400E1C9DC /* Date+Extension.swift in Sources */,
+				39AA8320248D38FC00DA7CA8 /* BMHomeRepostCell.swift in Sources */,
+				3950F2A0246CF20400F9B2E1 /* BMStatusViewModel.swift in Sources */,
+				3950F2AF246CFE0C00F9B2E1 /* BMEmojiAttachment.swift in Sources */,
+				3950F296246CE10500F9B2E1 /* BMNavigationController.swift in Sources */,
+				39007DCC2479649500E1C9DC /* BMStatusPicture.swift in Sources */,
+				39C7574C247EC20800E1C89E /* HMPhotoBrowserPhotos.m in Sources */,
+				39C75759247FFBD800E1C89E /* BMLabel.swift in Sources */,
+				3950F2A7246CF64500F9B2E1 /* BMEmojiManager.swift in Sources */,
+				D9A4318A2459712500C03479 /* BMNavigationBar.swift in Sources */,
+				397D1C97246406E30097779C /* String+BMPath.swift in Sources */,
+				D9A4316A24595CC400C03479 /* SceneDelegate.swift in Sources */,
+				D9A4317224595CC400C03479 /* BMWebo.xcdatamodeld in Sources */,
+				D9A43188245970EA00C03479 /* BMBaseViewController.swift in Sources */,
+				39C75750247EC20800E1C89E /* HMPhotoProgressView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D9A4316D24595CC400C03479 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9A4316E24595CC400C03479 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9A4317524595CC800C03479 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9A4317624595CC800C03479 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9A4317924595CC800C03479 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9A4317A24595CC800C03479 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9A4317C24595CC800C03479 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17C48DF3D9D5EDE0D01B05E3 /* Pods-BMWebo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C836DM7TC6;
+				INFOPLIST_FILE = BMWebo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.biggermax.BMWebo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yj/Library/Mobile Documents/com~apple~CloudDocs/BMWebo/BMWebo/BMWebo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9A4317D24595CC800C03479 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C4EFA83F397CF02CDC41607 /* Pods-BMWebo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C836DM7TC6;
+				INFOPLIST_FILE = BMWebo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.biggermax.BMWebo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yj/Library/Mobile Documents/com~apple~CloudDocs/BMWebo/BMWebo/BMWebo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9A4315F24595CC400C03479 /* Build configuration list for PBXProject "BMWebo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9A4317924595CC800C03479 /* Debug */,
+				D9A4317A24595CC800C03479 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9A4317B24595CC800C03479 /* Build configuration list for PBXNativeTarget "BMWebo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9A4317C24595CC800C03479 /* Debug */,
+				D9A4317D24595CC800C03479 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D9A4317024595CC400C03479 /* BMWebo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D9A4317124595CC400C03479 /* BMWebo.xcdatamodel */,
+			);
+			currentVersion = D9A4317124595CC400C03479 /* BMWebo.xcdatamodel */;
+			path = BMWebo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D9A4315C24595CC400C03479 /* Project object */;
+}
