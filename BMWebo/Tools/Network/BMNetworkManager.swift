@@ -97,3 +97,53 @@ extension BMNetworkManager{
     }
     
 }
+//MARK: -OAuth
+extension BMNetworkManager{
+    func getAccessToken(code: String, completion: @escaping((_ isSuccess: Bool) ->Void)){
+        let urlString = "https://api.weibo.com/oauth2/access_token"
+        let parms = ["client_id":BMAppKey,
+                     "client_secret":BMAppSecret,
+                     "grant_type":"authorization_code",
+                     "code":code,
+                     "redirect_uri":BMredirectUri]
+        request(method: .POST, URLString: urlString, parameters: parms as [String : AnyObject]) { (isSuccess, json) in
+            //使用YYModel转模型,如果转出来是nil,记得属性前面加`@objc` 关键字
+            // ==> swift4以后_YYModelMeta中的_keyMappedCount获取不到不带`@objc`的变量
+            self.userAccount.yy_modelSet(with: json as? [String:AnyObject] ?? [:])
+            
+            //load user info
+            self.fetchUserInfo { (dic) in
+                self.userAccount.yy_modelSet(with: dic)
+                self.userAccount.saveAccountInfo()
+                completion(isSuccess)
+            }
+        }
+    }
+}
+
+// MARK: -UserInfo
+extension BMNetworkManager {
+    func fetchUserInfo(completion:@escaping (([String:AnyObject])->())){
+        guard let uid = userAccount.uid else { return }
+        
+        let urlString = "https://api.weibo.com/2/users/show.json"
+        let parms = ["uid":uid]
+        
+        tokenRequest(URLString: urlString, parameters: parms as [String : AnyObject]) { (isSuccess, json) in
+            completion((json as? [String:AnyObject]) ?? [:])
+        }
+    }
+}
+
+// MARK: - 发布微博
+extension BMNetworkManager{
+    func creatStatus(text: String, completion:@escaping (_ result: [String:Any]?, _ isSuccess:Bool) ->()) {
+        //FIXME: 发布接口==>高级写入接口,要权限申请.
+        let urlString = "https://api.weibo.com/2/statuses/update.json"
+        let parms = ["status":text]
+        
+        tokenRequest(method: .POST, URLString: urlString, parameters: parms as [String : AnyObject]) { (isSuccess, json) in
+            completion(json as? [String:Any], isSuccess)
+        }
+    }
+}

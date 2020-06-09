@@ -30,6 +30,14 @@
 		397D1C922463C5EF0097779C /* BMNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397D1C912463C5EF0097779C /* BMNetworkManager.swift */; };
 		397D1C952463C6B40097779C /* BMUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397D1C942463C6B40097779C /* BMUserAccount.swift */; };
 		397D1C97246406E30097779C /* String+BMPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397D1C96246406E30097779C /* String+BMPath.swift */; };
+		3987A0B5248E1BBC00F35E75 /* BMNewFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3987A0B4248E1BBC00F35E75 /* BMNewFeatureView.swift */; };
+		3987A0B7248E245300F35E75 /* BMWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3987A0B6248E245300F35E75 /* BMWelcomeView.swift */; };
+		3987A0BA248E313700F35E75 /* BMOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3987A0B9248E313700F35E75 /* BMOAuthViewController.swift */; };
+		3987A0BC248E381F00F35E75 /* String+SubString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3987A0BB248E381F00F35E75 /* String+SubString.swift */; };
+		3987A0BF248E42B900F35E75 /* BMPublishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3987A0BE248E42B900F35E75 /* BMPublishView.swift */; };
+		3987A0C1248E88D200F35E75 /* BMCompostTypeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3987A0C0248E88D200F35E75 /* BMCompostTypeButton.swift */; };
+		3987A0C4248F672500F35E75 /* BMWriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3987A0C3248F672500F35E75 /* BMWriteController.swift */; };
+		3987A0C7248F679500F35E75 /* BMTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3987A0C6248F679500F35E75 /* BMTextView.swift */; };
 		399C463E24893A9F00D7E065 /* UIImageView+BMWebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399C463D24893A9F00D7E065 /* UIImageView+BMWebImage.swift */; };
 		399C464024893BF700D7E065 /* UIImage+BMExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399C463F24893BF700D7E065 /* UIImage+BMExtension.swift */; };
 		399C46422489425100D7E065 /* UIButton+Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399C46412489425100D7E065 /* UIButton+Tool.swift */; };
@@ -91,6 +99,14 @@
 		397D1C912463C5EF0097779C /* BMNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMNetworkManager.swift; sourceTree = "<group>"; };
 		397D1C942463C6B40097779C /* BMUserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMUserAccount.swift; sourceTree = "<group>"; };
 		397D1C96246406E30097779C /* String+BMPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+BMPath.swift"; sourceTree = "<group>"; };
+		3987A0B4248E1BBC00F35E75 /* BMNewFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMNewFeatureView.swift; sourceTree = "<group>"; };
+		3987A0B6248E245300F35E75 /* BMWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMWelcomeView.swift; sourceTree = "<group>"; };
+		3987A0B9248E313700F35E75 /* BMOAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMOAuthViewController.swift; sourceTree = "<group>"; };
+		3987A0BB248E381F00F35E75 /* String+SubString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SubString.swift"; sourceTree = "<group>"; };
+		3987A0BE248E42B900F35E75 /* BMPublishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMPublishView.swift; sourceTree = "<group>"; };
+		3987A0C0248E88D200F35E75 /* BMCompostTypeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMCompostTypeButton.swift; sourceTree = "<group>"; };
+		3987A0C3248F672500F35E75 /* BMWriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMWriteController.swift; sourceTree = "<group>"; };
+		3987A0C6248F679500F35E75 /* BMTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMTextView.swift; sourceTree = "<group>"; };
 		399C463D24893A9F00D7E065 /* UIImageView+BMWebImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+BMWebImage.swift"; sourceTree = "<group>"; };
 		399C463F24893BF700D7E065 /* UIImage+BMExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+BMExtension.swift"; sourceTree = "<group>"; };
 		399C46412489425100D7E065 /* UIButton+Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Tool.swift"; sourceTree = "<group>"; };
@@ -228,6 +244,48 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		3987A0B3248E1B6A00F35E75 /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				3987A0B4248E1BBC00F35E75 /* BMNewFeatureView.swift */,
+				3987A0B6248E245300F35E75 /* BMWelcomeView.swift */,
+			);
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
+		3987A0B8248E311E00F35E75 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				3987A0B9248E313700F35E75 /* BMOAuthViewController.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		3987A0BD248E429C00F35E75 /* PulishView */ = {
+			isa = PBXGroup;
+			children = (
+				3987A0C3248F672500F35E75 /* BMWriteController.swift */,
+				3987A0BE248E42B900F35E75 /* BMPublishView.swift */,
+				3987A0C0248E88D200F35E75 /* BMCompostTypeButton.swift */,
+			);
+			path = PulishView;
+			sourceTree = "<group>";
+		};
+		3987A0C2248F651A00F35E75 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		3987A0C5248F678300F35E75 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				3987A0C6248F679500F35E75 /* BMTextView.swift */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
 		39AA8325248DD52C00DA7CA8 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,6 +411,9 @@
 		D9A4317E24596A9700C03479 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3987A0C2248F651A00F35E75 /* Message */,
+				3987A0BD248E429C00F35E75 /* PulishView */,
+				3987A0B8248E311E00F35E75 /* OAuth */,
 				39AA8325248DD52C00DA7CA8 /* Profile */,
 				3950F299246CF12B00F9B2E1 /* Home */,
 				D9A431922459770B00C03479 /* Plugs */,
@@ -364,6 +425,7 @@
 		D9A4317F24596AAA00C03479 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3987A0B3248E1B6A00F35E75 /* NewFeature */,
 				39C75757247FFBC200E1C89E /* BMLabel */,
 				3950F297246CF06700F9B2E1 /* main.json */,
 				3950F290246AAA6600F9B2E1 /* VisitorView */,
@@ -386,6 +448,7 @@
 		D9A4318324596FD000C03479 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				3987A0C5248F678300F35E75 /* Editor */,
 				39C7573E247EC1A700E1C89E /* PhotoBrower */,
 				39281D02247C055800604471 /* SQLite */,
 				3950F2A5246CF62300F9B2E1 /* Emoji */,
@@ -407,6 +470,7 @@
 				D9AF9E72246C2C5100CD2B96 /* UIButton+Extension.swift */,
 				39007DCD247966E400E1C9DC /* Date+Extension.swift */,
 				39281CFE247AB4D900604471 /* String+Extension.swift */,
+				3987A0BB248E381F00F35E75 /* String+SubString.swift */,
 				399C463D24893A9F00D7E065 /* UIImageView+BMWebImage.swift */,
 				399C463F24893BF700D7E065 /* UIImage+BMExtension.swift */,
 				399C46412489425100D7E065 /* UIButton+Tool.swift */,
@@ -564,6 +628,9 @@
 				39AA8327248DD55F00DA7CA8 /* BMProfileViewController.swift in Sources */,
 				39AA8324248DCE3700DA7CA8 /* UIBarButtonItem+Extension.swift in Sources */,
 				D9A4316C24595CC400C03479 /* ViewController.swift in Sources */,
+				3987A0C7248F679500F35E75 /* BMTextView.swift in Sources */,
+				3987A0C1248E88D200F35E75 /* BMCompostTypeButton.swift in Sources */,
+				3987A0C4248F672500F35E75 /* BMWriteController.swift in Sources */,
 				39C75753247EC45E00E1C89E /* BMTitleButton.swift in Sources */,
 				3950F292246AAAFE00F9B2E1 /* BMVisitorView.swift in Sources */,
 				39C7574D247EC20800E1C89E /* HMPhotoViewerController.m in Sources */,
@@ -595,13 +662,18 @@
 				39007DCC2479649500E1C9DC /* BMStatusPicture.swift in Sources */,
 				39C7574C247EC20800E1C89E /* HMPhotoBrowserPhotos.m in Sources */,
 				39C75759247FFBD800E1C89E /* BMLabel.swift in Sources */,
+				3987A0B7248E245300F35E75 /* BMWelcomeView.swift in Sources */,
+				3987A0BF248E42B900F35E75 /* BMPublishView.swift in Sources */,
 				3950F2A7246CF64500F9B2E1 /* BMEmojiManager.swift in Sources */,
 				D9A4318A2459712500C03479 /* BMNavigationBar.swift in Sources */,
 				397D1C97246406E30097779C /* String+BMPath.swift in Sources */,
 				D9A4316A24595CC400C03479 /* SceneDelegate.swift in Sources */,
+				3987A0BC248E381F00F35E75 /* String+SubString.swift in Sources */,
 				D9A4317224595CC400C03479 /* BMWebo.xcdatamodeld in Sources */,
 				D9A43188245970EA00C03479 /* BMBaseViewController.swift in Sources */,
+				3987A0BA248E313700F35E75 /* BMOAuthViewController.swift in Sources */,
 				39C75750247EC20800E1C89E /* HMPhotoProgressView.m in Sources */,
+				3987A0B5248E1BBC00F35E75 /* BMNewFeatureView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
